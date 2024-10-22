@@ -15,7 +15,7 @@ public class OpenApiController {
 
     @GetMapping("/api/getBikeData")
     public ResponseEntity<BikeStationList> getBikeData(){
-        BikeStationList bikeStationList=openApiService.getBikeData("1","10");
+        BikeStationList bikeStationList=openApiService.getBikeData("1","1000");
         return ResponseEntity.ok(bikeStationList);
     }
 }
